@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.aman.calendarview.CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:is_back_button_show="true"
+        app:year_date_Formate="MM YYYY"
+        app:year_text_clr="@color/cblack"
+        app:year_text_size="12dp"
+        app:month_txt_size="8dp"
+        app:month_unselect_txt_clr="@color/white"
+        app:month_selected_txt_clr="@color/green"
+        app:month_bg="@color/black"
+        app:week_bg_clr="@color/black"
+        app:week_txt_clr="@color/white"
+        app:week_txt_size="6dp"
+        app:day_bg="@color/white"
+        app:day_text_size="5dp"
+        app:day_select_txt_clr="@color/white"
+        app:day_txt_clr="@color/cblack"
+        app:cv_bg="@drawable/rect_lr_wround_bg"/>
+
+    <Button
+        android:id="@+id/showDialogCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showDialogCalendar"
+        android:text="Show Dialog Calendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

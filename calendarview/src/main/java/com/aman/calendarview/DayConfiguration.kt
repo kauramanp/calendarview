@@ -1,0 +1,11 @@
+package com.aman.calendarview
+
+data class DayConfiguration(
+    var dayTxtClr: Int? = null,
+    var dayBg: Int? = null,
+    var daySelectedClr: Int? = null,
+    var daySelectedBg: Int? = null,
+    var dayFont: Int? = null,
+    var dayTxtSize: Float? = null,
+    var eventDotColor: Int? = null
+)
