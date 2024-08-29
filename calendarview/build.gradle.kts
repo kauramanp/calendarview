@@ -1,5 +1,5 @@
 group = "com.github.kauramanp"
-version = "1.0.3"
+version = "v1.0.4"
 plugins {
     id("com.android.library")
     alias(libs.plugins.jetbrains.kotlin.android)
